@@ -1,58 +1,14 @@
 <application>
   <component name="ProjectManager">
     <defaultProject>
-      <component name="CompilerConfiguration">
-        <option name="DEFAULT_COMPILER" />
-        <wildcardResourcePatterns>
-          <entry name="!?*.java" />
-          <entry name="!?*.form" />
-          <entry name="!?*.class" />
-          <entry name="!?*.groovy" />
-          <entry name="!?*.scala" />
-          <entry name="!?*.flex" />
-          <entry name="!?*.kt" />
-          <entry name="!?*.clj" />
-        </wildcardResourcePatterns>
-      </component>
-      <component name="Encoding">
-        <file url="PROJECT" charset="UTF-8" />
-      </component>
-      <component name="GradleLocalSettings">
-        <option name="modificationStamps">
-          <map>
-            <entry key="$USER_HOME$/work/bigpowerset" value="2872076993502" />
-            <entry key="$USER_HOME$/work/finch/grails-core" value="2975408354488" />
-            <entry key="$USER_HOME$/work/finch/grails-dirties-context-mem-leak" value="1489685701446" />
-            <entry key="$USER_HOME$/work/finch/grails3/src" value="2976093080292" />
-            <entry key="$USER_HOME$/work/finch/grails3/src/g3sample" value="1487713605052" />
-            <entry key="$USER_HOME$/work/finch/grails3/src/grails-rollback-issue" value="1488314553955" />
-            <entry key="$USER_HOME$/work/finch/grails3/src/growth" value="1487582164864" />
-            <entry key="$USER_HOME$/work/finch/grails3/src/multi-datasource-txn-bug" value="1487872200772" />
-            <entry key="$USER_HOME$/work/finch/grails3/src/rollbacktest" value="1488304655015" />
-            <entry key="$USER_HOME$/work/finch/jvmbug" value="1488954028593" />
-            <entry key="$USER_HOME$/work/finch/trunk/src/growth" value="1487270185755" />
-            <entry key="$USER_HOME$/work/longpowerset" value="2872129255056" />
-          </map>
-        </option>
-        <option name="externalProjectsViewState">
-          <projects_view />
-        </option>
-      </component>
       <component name="InspectionProjectProfileManager">
         <option name="PROJECT_PROFILE" />
         <version value="1.0" />
       </component>
-      <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
       <component name="PropertiesComponent">
-        <property name="GoToClass.includeLibraries" value="false" />
-        <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-        <property name="GoToFile.includeJavaFiles" value="false" />
-        <property name="MemberChooser.sorted" value="false" />
-        <property name="MemberChooser.showClasses" value="true" />
-        <property name="MemberChooser.copyJavadoc" value="false" />
-        <property name="project.structure.last.edited" value="Global Libraries" />
+        <property name="project.structure.last.edited" value="Project" />
         <property name="project.structure.proportion" value="0.0" />
-        <property name="project.structure.side.proportion" value="0.3448276" />
+        <property name="project.structure.side.proportion" value="0.0" />
       </component>
       <component name="RunManager">
         <configuration default="true" type="Applet" factoryName="Applet">
@@ -88,11 +44,11 @@
           <option name="TEST_OBJECT" value="class" />
           <option name="VM_PARAMETERS" value="-ea" />
           <option name="PARAMETERS" />
-          <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+          <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
           <option name="ENV_VARIABLES" />
           <option name="PASS_PARENT_ENVS" value="true" />
           <option name="TEST_SEARCH_SCOPE">
-            <value defaultName="moduleWithDependencies" />
+            <value defaultName="singleModule" />
           </option>
           <envs />
           <patterns />
@@ -119,13 +75,13 @@
           <option name="TEST_OBJECT" value="CLASS" />
           <option name="VM_PARAMETERS" value="-ea" />
           <option name="PARAMETERS" />
-          <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+          <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
           <option name="OUTPUT_DIRECTORY" />
           <option name="ANNOTATION_TYPE" />
           <option name="ENV_VARIABLES" />
           <option name="PASS_PARENT_ENVS" value="true" />
           <option name="TEST_SEARCH_SCOPE">
-            <value defaultName="moduleWithDependencies" />
+            <value defaultName="singleModule" />
           </option>
           <option name="USE_DEFAULT_REPORTERS" value="false" />
           <option name="PROPERTIES_FILE" />
@@ -134,20 +90,18 @@
           <listeners />
           <method />
         </configuration>
-        <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
-          <Host>localhost</Host>
-          <Port>5050</Port>
+        <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+          <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
         </configuration>
       </component>
       <component name="masterDetails">
         <states>
           <state key="GlobalLibrariesConfigurable.UI">
             <settings>
-              <last-edited>actionmailer (v4.1.4, ruby-1.9.3-p545) [gem]</last-edited>
               <splitter-proportions>
                 <option name="proportions">
                   <list>
-                    <option value="0.3448276" />
+                    <option value="0.2" />
                   </list>
                 </option>
               </splitter-proportions>
@@ -155,19 +109,6 @@
           </state>
           <state key="JdkListConfigurable.UI">
             <settings>
-              <last-edited>1.7</last-edited>
-              <splitter-proportions>
-                <option name="proportions">
-                  <list>
-                    <option value="0.3448276" />
-                  </list>
-                </option>
-              </splitter-proportions>
-            </settings>
-          </state>
-          <state key="ProjectJDKs.UI">
-            <settings>
-              <last-edited>1.8</last-edited>
               <splitter-proportions>
                 <option name="proportions">
                   <list>
@@ -182,7 +123,7 @@
               <splitter-proportions>
                 <option name="proportions">
                   <list>
-                    <option value="0.3448276" />
+                    <option value="0.2" />
                   </list>
                 </option>
               </splitter-proportions>
