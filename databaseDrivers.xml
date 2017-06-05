@@ -1,12 +1,21 @@
 <application>
   <component name="LocalDatabaseDriverManager" version="163">
+    <driver id="0d2d5551-507e-42cf-a4f4-1aaf3241cfba" name="growth dev driver" dialect="PostgreSQL" driver-class="org.postgresql.Driver" icon="AllIcons.Providers.Postgresql">
+      <url-template name="default" template="jdbc:postgresql:[//[{host::localhost}[:{port::5432}]]/]{database::postgres}[\?&lt;&amp;,user={user},password={password},{:identifier}={:identifier}&gt;]" />
+      <url-template name="default" template="jdbc:postgresql://\[{host:ipv6:\:\:1}\][:{port::5432}]/{database::postgres}[\?&lt;&amp;,user={user},password={password},{:identifier}={:identifier}&gt;]" />
+      <artifact name="PostgreSQL" />
+      <option name="auto-sync" value="true" />
+      <library>
+        <url>file://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.4-1201-jdbc41/postgresql-9.4-1201-jdbc41.jar</url>
+      </library>
+    </driver>
     <driver id="h2.unified" name="H2" dialect="H2">
       <artifact name="H2" use="true" />
       <option name="auto-sync" value="true" />
     </driver>
     <driver id="oracle" name="Oracle" dialect="Oracle">
       <artifact name="Oracle" use="true" />
-      <option name="auto-sync" value="true" />
+      <option name="auto-sync" value="false" />
       <option name="auto-commit" value="false" />
     </driver>
     <driver id="derby.embedded" name="Derby (Embedded)" dialect="Derby">
@@ -15,11 +24,11 @@
     </driver>
     <driver id="sybase.jtds" name="Sybase (jTds)" dialect="Sybase">
       <artifact name="jTDS (SQL Server and Sybase)" use="true" />
-      <option name="auto-sync" value="true" />
+      <option name="auto-sync" value="false" />
     </driver>
     <driver id="sqlserver.jtds" name="SQL Server (jTds)" dialect="TSQL">
       <artifact name="jTDS (SQL Server and Sybase)" use="true" />
-      <option name="auto-sync" value="true" />
+      <option name="auto-sync" value="false" />
     </driver>
     <driver id="hsqldb.local" name="HSQLDB (Local)" dialect="HSQLDB">
       <artifact name="HSQLDB" use="true" />
@@ -35,11 +44,15 @@
       <property name="enable_load_extension" value="true" />
     </driver>
     <driver id="sybase.ase" name="Sybase (Native)" dialect="Sybase">
-      <option name="auto-sync" value="true" />
+      <option name="auto-sync" value="false" />
     </driver>
     <driver id="postgresql" name="PostgreSQL" dialect="PostgreSQL">
-      <artifact name="PostgreSQL" use="true" />
+      <artifact name="PostgreSQL" use="true" version="9.4-1201" />
       <option name="auto-sync" value="true" />
+      <option name="auto-commit" value="true" />
+      <library>
+        <url>file://$USER_HOME$/.grails/ivy-cache/postgresql/postgresql/jars/postgresql-9.1-901.jdbc4.jar</url>
+      </library>
     </driver>
     <driver id="db2" name="DB2 (LUW)" dialect="DB2">
       <artifact name="DB2" use="true" />
@@ -48,7 +61,22 @@
     </driver>
     <driver id="sqlserver.ms" name="SQL Server (Microsoft)" dialect="TSQL">
       <artifact name="SQL Server" use="true" />
+      <option name="auto-sync" value="false" />
+    </driver>
+    <driver id="b870735c-6543-480b-9629-7e87a22a163c" name="growth dev driver" dialect="PostgreSQL" driver-class="org.postgresql.Driver" icon="AllIcons.Providers.Postgresql">
+      <url-template name="default" template="jdbc:postgresql:[//[{host::localhost}[:{port::5432}]]/]{database::postgres}[\?&lt;&amp;,user={user},password={password},{:identifier}={:identifier}&gt;]" />
+      <url-template name="default" template="jdbc:postgresql://\[{host:ipv6:\:\:1}\][:{port::5432}]/{database::postgres}[\?&lt;&amp;,user={user},password={password},{:identifier}={:identifier}&gt;]" />
+      <artifact name="PostgreSQL" />
       <option name="auto-sync" value="true" />
+      <library>
+        <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-9.4-1201.jdbc4.jar</url>
+      </library>
+      <library>
+        <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/.grails/ivy-cache/postgresql/postgresql/jars/postgresql-9.1-901.jdbc4.jar</url>
+      </library>
     </driver>
     <driver id="db2.jtopen" name="DB2 (JTOpen)" dialect="DB2">
       <artifact name="JTOpen (DB2 iSeries)" use="true" />
